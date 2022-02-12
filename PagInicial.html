@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Site dedicado à mostrar fotos de animais fofos com descrições legais.">
+        <meta name="keywords" content="Animais, bichos, bichinhos, fofos, adoráveis, lindos">
+        <meta name="viewport" content="width=device-width, initial-scale=1,0">
+        <title>Auto Shop - Página Inicial</title>
+        <link rel="stylesheet" href="Estilo.css">
+    </head>
+    <body>
+        <header>
+            <h1>
+                Auto Shop
+            </h1>
+        </header>
+        <nav>
+            <a href="PagInicial.html">Página Inicial</a>
+            <a href="Galeria.html">Galeria</a>
+            <a href="Contato.html">Contato</a>
+        </nav>
+        <section>
+            <picture>
+                <img class="galleryMainPicture" title="CHERRIER FCV VIVACE S 410Q ARSENIC (DCT)" src="Imgs/CHERRIER FCV VIVACE S 410Q ARSENIC (DCT)/IMG05.png">
+            </picture>
+            <div class="flex-container">
+                <img class="galleryMinorPictures" id="fst-vivace-img" src="Imgs/CHERRIER FCV VIVACE S 410Q ARSENIC (DCT)/IMG01.png" onclick=imgToModal(0)>  
+                <img class="galleryMinorPictures" id="snd-vivace-img" src="Imgs/CHERRIER FCV VIVACE S 410Q ARSENIC (DCT)/IMG02.png" onclick=imgToModal(1)>
+                <img class="galleryMinorPictures" id="thd-vivace-img" src="Imgs/CHERRIER FCV VIVACE S 410Q ARSENIC (DCT)/IMG03.png" onclick=imgToModal(2)>
+                <img class="galleryMinorPictures" id="fth-vivace-img" src="Imgs/CHERRIER FCV VIVACE S 410Q ARSENIC (DCT)/IMG04.png" onclick=imgToModal(3)>
+            </div>
+            <picture>
+                <img class="galleryMainPicture" title="ETK 800 SERIES 856TC (A)" src="Imgs/ETK 800 SERIES 856TC (A)/IMG03.png">
+            </picture>
+            <div class="flex-container">
+                <img class="galleryMinorPictures" id="fst-800series-img" src="Imgs/ETK 800 SERIES 856TC (A)/IMG02.png" onclick=imgToModal(4)>
+                <img class="galleryMinorPictures" id="snd-800series-img" src="Imgs/ETK 800 SERIES 856TC (A)/IMG04.png" onclick=imgToModal(5)>
+                <img class="galleryMinorPictures" id="thd-800series-img" src="Imgs/ETK 800 SERIES 856TC (A)/IMG05.png" onclick=imgToModal(6)>
+                <img class="galleryMinorPictures" id="fth-800series-img" src="Imgs/ETK 800 SERIES 856TC (A)/IMG01.png" onclick=imgToModal(7)>
+            </div>
+            <picture>
+                <img class="galleryMainPicture" title="ETK K-SERIES KC6TX (M)" src="Imgs/ETK K-SERIES KC6TX (M)/IMG03.png">
+            </picture>
+            <div class="flex-container">
+                <img class="galleryMinorPictures" id="fst-kseries-img" src="Imgs/ETK K-SERIES KC6TX (M)/IMG02.png" onclick=imgToModal(8)>
+                <img class="galleryMinorPictures" id="snd-kseries-img" src="Imgs/ETK K-SERIES KC6TX (M)/IMG04.png" onclick=imgToModal(9)>
+                <img class="galleryMinorPictures" id="thd-kseries-img" src="Imgs/ETK K-SERIES KC6TX (M)/IMG05.png" onclick=imgToModal(10)>
+                <img class="galleryMinorPictures" id="fth-kseries-img" src="Imgs/ETK K-SERIES KC6TX (M)/IMG01.png" onclick=imgToModal(11)>
+            </div>
+            <picture>
+                <img class="galleryMainPicture" title="HIROCHI SBR4 AWD TT S (DCT)" src="Imgs/HIROCHI SBR4 AWD TT S (DCT)/IMG03.png">
+            </picture>
+            <div class="flex-container">
+                <img class="galleryMinorPictures" id="fst-SBR4-img" src="Imgs/HIROCHI SBR4 AWD TT S (DCT)/IMG02.png" onclick=imgToModal(12)>
+                <img class="galleryMinorPictures" id="snd-SBR4-img" src="Imgs/HIROCHI SBR4 AWD TT S (DCT)/IMG04.png" onclick=imgToModal(13)>
+                <img class="galleryMinorPictures" id="thd-SBR4-img" src="Imgs/HIROCHI SBR4 AWD TT S (DCT)/IMG05.png" onclick=imgToModal(14)>
+                <img class="galleryMinorPictures" id="fth-SBR4-img" src="Imgs/HIROCHI SBR4 AWD TT S (DCT)/IMG01.png" onclick=imgToModal(15)>
+            </div>
+            <picture>
+                <img class="galleryMainPicture" title="AUTOBELLO PICCOLINA 130 (A)" src="Imgs/AUTOBELLO PICCOLINA 130 (A)/IMG03.png">
+            </picture>
+            <div class="flex-container">
+                <img class="galleryMinorPictures" id="fst-piccolina-img" src="Imgs/AUTOBELLO PICCOLINA 130 (A)/IMG02.png" onclick=imgToModal(16)>
+                <img class="galleryMinorPictures" id="snd-piccolina-img" src="Imgs/AUTOBELLO PICCOLINA 130 (A)/IMG04.png" onclick=imgToModal(17)>
+                <img class="galleryMinorPictures" id="thd-piccolina-img" src="Imgs/AUTOBELLO PICCOLINA 130 (A)/IMG05.png" onclick=imgToModal(18)>
+                <img class="galleryMinorPictures" id="fth-piccolina-img" src="Imgs/AUTOBELLO PICCOLINA 130 (A)/IMG01.png" onclick=imgToModal(19)>
+            </div>
+            <div id="modal">
+                <picture>
+                    <img class="modal-content" id="modal-img">
+                </picture>
+                <div id="btnModal" onclick="windowClose()">
+                    &times
+                </div>
+                <div class="slider-button" id="right-slider">
+                    &gt
+                </div>
+                <div class="slider-button" id="left-slider">
+                    &lt
+                </div>  
+            </div>
+        </section>
+        <script type="text/javascript" src="Script1.js"></script>
+    </body>
+</html>
